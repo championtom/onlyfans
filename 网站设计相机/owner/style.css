@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: '微软雅黑', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ￥￥￥￥￥￥￥￥nav样式 ￥￥￥￥￥￥*/
+.nav {
+    position: relative;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    z-index: 10;
+}
+
+/* 左边 */
+.nav .left {
+    position: absolute;
+    left: 30px;
+    margin-top: 16px;
+}
+
+.nav .left a {
+    line-height: 80px;
+    color: #fbfbfbfc;
+    font: normal 700 35px "黑体";
+}
+
+/* 右边 */
+.nav .right {
+    position: absolute;
+    right: 180px;
+    margin-top: 12px;
+}
+
+.nav .right ul li {
+    float: left;
+
+}
+
+.nav .right ul li:hover a {
+    background-color: #fbfbfbfc;
+    color: black;
+}
+
+.nav .right ul a {
+    display: block;
+    margin: 12PX;
+    padding: 8PX;
+    color: #fbfbfbfc;
+    font: normal 400 18px "黑体";
+    border-radius: 8px;
+}
+
+/*￥￥￥￥￥￥￥￥ 主体内容 ￥￥￥￥￥*/
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(upload/img3.jpg);
+    background-repeat: no-repeat;
+}
+
+.main .title {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font: normal 700 55px "微软雅黑";
+    text-align: center;
+}
+
+.main .but {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+}
+
+.main .but button {
+    font: normal 400 20px "微软雅黑";
+    padding: 5px 12px 5px 12px;
+    margin-left: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main .but :nth-child(1) {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+}
+
+.main .but :nth-child(1):hover {
+    color: black;
+    background-color: white;
+}
+
+.main .but :nth-child(2) {
+    color: black;
+    background-color: white;
+    border-color: white;
+}
